@@ -1,0 +1,19 @@
+EVALUATOR - upload to evaluator.watch
+=====================================
+
+1. Unzip evaluator-watch.zip OR copy all files from this folder
+2. Put them in the web root of evaluator.watch
+3. Keep the folder structure (assets/, data/ next to index.html)
+
+Required at site root:
+  index.html
+  hot.html
+  styles.css
+  app.js
+  hot.js
+  theme.js
+  cursor.js
+  assets/
+  data/
+
+Do not upload: scripts/, docs/, README.md, .git

@@ -1,0 +1,19 @@
+# local / tooling
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.env
+.env.*
+.venv/
+venv/
+
+# oversized design refs (keep small PNGs)
+assets/ref/cursor-ref.gif
+*.mp4
+*.mov
+
+# editor
+.idea/
+.vscode/
+*.swp

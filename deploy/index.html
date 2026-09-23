@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EVALUATOR - Trust Layer for WEB3 | evaluator.watch</title>
+  <meta name="description" content="evaluator.watch - composite factor scores for WEB3 protocols: Predictive Power, Temporal Stability, Robustness, Interpretability, Governance." />
+  <link rel="canonical" href="https://evaluator.watch/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="./assets/logo.png" />
+  <script>
+    (() => {
+      const t = localStorage.getItem("evaluator-theme") || "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="./assets/evaluator-wordmark.png" alt="EVALUATOR" class="brand-wordmark" data-wordmark />
+    </a>
+    <nav class="nav-links">
+      <a href="#scores">SCORES</a>
+      <a href="#market">MARKET</a>
+      <a href="#method">METHOD</a>
+      <a href="#token">TOKEN</a>
+      <a href="#governance">GOVERNANCE</a>
+      <a href="#roadmap">ROADMAP</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <button type="button" class="btn-theme" id="themeToggle" aria-label="Toggle theme" title="Theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 14.3A9 9 0 1 1 9.7 3a7.2 7.2 0 1 0 11.3 11.3Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 4.5a1 1 0 0 1 1 1V7a1 1 0 1 1-2 0V5.5a1 1 0 0 1 1-1Zm0 11a1 1 0 0 1 1 1V19a1 1 0 1 1-2 0v-2.5a1 1 0 0 1 1-1Zm7.5-4.5a1 1 0 0 1-1 1H17a1 1 0 1 1 0-2h1.5a1 1 0 0 1 1 1ZM8 12a1 1 0 0 1-1 1H5.5a1 1 0 1 1 0-2H7a1 1 0 0 1 1 1Zm9.07-5.07a1 1 0 0 1 0 1.41l-1.06 1.06a1 1 0 1 1-1.41-1.41l1.06-1.06a1 1 0 0 1 1.41 0ZM9.4 14.6a1 1 0 0 1 0 1.41l-1.06 1.06a1 1 0 1 1-1.41-1.41L8 14.6a1 1 0 0 1 1.41 0Zm0-7.07L8.34 6.47A1 1 0 0 1 9.75 5.06l1.06 1.06a1 1 0 0 1-1.41 1.41Zm7.07 7.07-1.06 1.06a1 1 0 1 1-1.41-1.41l1.06-1.06a1 1 0 0 1 1.41 1.41ZM12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Z"/></svg>
+      </button>
+      <a class="btn-hot" href="./hot.html">HOT PROJECT</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>TRUST LAYER FOR <span class="grad">WEB3</span></h1>
+      <p class="hero-sub">Composite scores for protocols - so you know why a name looks strong before you commit size.</p>
+      <p class="hero-meta">Predictive Power Â· Stability Â· Robustness Â· Logic Â· Diversity</p>
+    </section>
+
+    <section class="carousel-wrap" id="scores" aria-label="Protocol scores carousel">
+      <button class="car-btn prev" type="button" aria-label="Previous">â€¹</button>
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="carouselTrack"></div>
+      </div>
+      <button class="car-btn next" type="button" aria-label="Next">â€º</button>
+    </section>
+
+    <section class="search-panel" id="search">
+      <p class="eyebrow center">// FIND A PROJECT</p>
+      <form class="search-bar" id="searchForm" autocomplete="off">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search project - Bitcoin, Solana, Uniswap..."
+          aria-label="Search project"
+        />
+        <button type="submit">ANALYZE</button>
+      </form>
+      <div class="suggest" id="suggest" hidden></div>
+      <div class="analysis" id="analysis" hidden></div>
+    </section>
+
+    <section class="panel" id="market">
+      <div class="panel-head">
+        <p class="eyebrow">// MARKET</p>
+        <h2>What EVALUATOR scores - and what it refuses to pretend.</h2>
+        <p class="lead">
+          Most WEB3 dashboards sell vibes: green candles, follower counts, TVL screenshots.
+          EVALUATOR scores protocols as <strong>factors</strong> - measurable signals with holdout behavior,
+          not as marketing pages. The output is a 0-100 composite plus a breakdown you can argue with.
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <article class="glass-box">
+          <h3>Who this is for</h3>
+          <ul class="bullets">
+            <li>Operators comparing L1 / L2 / DeFi names before size</li>
+            <li>Funds that need a shared score language across analysts</li>
+            <li>Builders shipping factors who want IC + stability first</li>
+            <li>Anyone tired of "trust me bro" research threads</li>
+          </ul>
+        </article>
+        <article class="glass-box">
+          <h3>What it is not</h3>
+          <ul class="bullets">
+            <li>Not price prediction or financial advice</li>
+            <li>Not a replacement for legal / security diligence</li>
+            <li>Not a claim that high score = guaranteed alpha</li>
+            <li>Not a black-box AI that cannot show its work</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="panel-head tight">
+        <p class="eyebrow">// SCORING MODEL</p>
+        <h2>Composite score. Not a magic net.</h2>
+        <p class="lead">
+          First version is a weighted composite across 4-5 dimensions you can compute separately.
+          Show the total and the breakdown - otherwise you never know why a "good" factor died in live P&amp;L.
+        </p>
+      </div>
+
+      <div class="dims">
+        <article class="dim">
+          <div class="dim-top">
+            <span class="dim-w">35-40%</span>
+            <h3>Predictive Power</h3>
+          </div>
+          <p>IC + RankIC (PPS, Î² = 0.5). IC Information Ratio = mean(IC) / std(IC) across periods. The alpha base - if this is weak, nothing else saves the score.</p>
+        </article>
+        <article class="dim">
+          <div class="dim-top">
+            <span class="dim-w">20-25%</span>
+            <h3>Temporal Stability</h3>
+          </div>
+          <p>Rank correlation across adjacent windows + share of periods where IC sign holds. Unstable = high turnover and random P&amp;L even when average IC looks fine.</p>
+        </article>
+        <article class="dim">
+          <div class="dim-top">
+            <span class="dim-w">15-20%</span>
+            <h3>Robustness</h3>
+          </div>
+          <p>Shift windows, add noise, drop top 1% extremes, change 1d to 5d horizon. If the score collapses - the factor is fragile and unfit for size.</p>
+        </article>
+        <article class="dim">
+          <div class="dim-top">
+            <span class="dim-w">10-15%</span>
+            <h3>Logic / Interpretability</h3>
+          </div>
+          <p>Economic sense check. Start with LLM-as-judge + checklist: no look-ahead, no future leak, not pure noise. Later - expert rubric and human review.</p>
+        </article>
+        <article class="dim optional">
+          <div class="dim-top">
+            <span class="dim-w">~10%</span>
+            <h3>Diversity</h3>
+          </div>
+          <p>Optional on MVP. Correlation vs benchmark factors (momentum, value, size). Penalize redundancy so the book does not stack the same bet five times.</p>
+        </article>
+      </div>
+
+      <div class="formula">
+        <p>Normalize each dimension (z-score or min-max) â†’ weighted sum â†’ clip to <strong>0-100</strong>.</p>
+        <p class="muted">MVP shortcut: Predictive Power + Temporal Stability alone already beats "look at Sharpe after a backtest".</p>
+      </div>
+
+      <div class="readout">
+        <h3>How to read a score</h3>
+        <div class="readout-grid">
+          <div class="readout-item">
+            <strong>85-100</strong>
+            <span>Strong composite. Still check red flags and sample length.</span>
+          </div>
+          <div class="readout-item">
+            <strong>70-84</strong>
+            <span>Usable with caveats. Watch stability and 2022-style holdouts.</span>
+          </div>
+          <div class="readout-item">
+            <strong>55-69</strong>
+            <span>Mixed. Fine for research, risky as a core position thesis.</span>
+          </div>
+          <div class="readout-item">
+            <strong>below 55</strong>
+            <span>Weak or noisy. Treat as exploratory until the signal improves.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="method">
+      <div class="panel-head">
+        <p class="eyebrow">// METHOD</p>
+        <h2>Cheap data. Hard splits. Honest holdouts.</h2>
+        <p class="lead">
+          The method is deliberately boring. Free or local data, liquid universe, fixed time splits,
+          and a report that shows where the factor worked - and where it failed.
+        </p>
+      </div>
+
+      <div class="panel split">
+        <div>
+          <h3 class="subhead">Data stack</h3>
+          <ul class="bullets">
+            <li><strong>Prices / volume</strong> - yfinance (US) or local CSV for crypto OHLCV</li>
+            <li><strong>Universe</strong> - 100-300 liquid names (majors + liquid alts, no illiquid dust)</li>
+            <li><strong>Frequency</strong> - daily as default; weekly for stress checks</li>
+            <li><strong>Split</strong> - train 2015-2019 Â· validation 2020-2021 Â· holdout 2022-now</li>
+            <li><strong>Target</strong> - forward return 1d / 5d / 20d</li>
+            <li><strong>Cleaning</strong> - corporate actions, volume outliers, delistings, date look-ahead</li>
+          </ul>
+        </div>
+        <div class="glass-box">
+          <h3>How alphas enter the evaluator</h3>
+          <ol>
+            <li>Manual formulas + simple Python functions</li>
+            <li>Genetic search / LLM-generated formulas</li>
+            <li>Agent signals (same logic, different data feeds)</li>
+          </ol>
+          <p class="muted">Agent / product eval (PDF tasks + rubric) is production-eval territory - not the first build.</p>
+        </div>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <span class="step-n">01</span>
+          <h3>Ingest</h3>
+          <p>Load prices, align calendars, drop illiquid names, mark look-ahead risks before any factor runs.</p>
+        </article>
+        <article class="step">
+          <span class="step-n">02</span>
+          <h3>Compute</h3>
+          <p>Run IC / RankIC / ICIR on validation, then freeze rules before you touch the holdout window.</p>
+        </article>
+        <article class="step">
+          <span class="step-n">03</span>
+          <h3>Stress</h3>
+          <p>Shift windows, add noise, change horizon. Keep only signals that survive without babysitting.</p>
+        </article>
+        <article class="step">
+          <span class="step-n">04</span>
+          <h3>Report</h3>
+          <p>Publish 0-100 composite + breakdown + red flags. No score without a reason trail.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="token">
+      <div class="panel-head">
+        <p class="eyebrow">// TOKEN</p>
+        <h2>Access layer - not a casino chip.</h2>
+        <p class="lead">
+          The token is designed to gate deep reports, batch scoring, and governance weight -
+          not to invent a new yield narrative. Utility first. Speculation is optional and unsolicited.
+        </p>
+      </div>
+
+      <div class="token-grid">
+        <article class="token-card">
+          <span class="tag">ACCESS</span>
+          <h3>Report unlocks</h3>
+          <p>Holders unlock full IC tables, robustness packs, and historical rescores for covered protocols.</p>
+        </article>
+        <article class="token-card">
+          <span class="tag">STAKE</span>
+          <h3>Signal staking</h3>
+          <p>Stake against a published score. If the holdout breaks the claim, stake gets slashed toward the dispute pool.</p>
+        </article>
+        <article class="token-card">
+          <span class="tag">GOVERN</span>
+          <h3>Weight votes</h3>
+          <p>Token weight votes on model parameters: dimension weights, universe filters, and red-flag thresholds.</p>
+        </article>
+        <article class="token-card">
+          <span class="tag">BUILD</span>
+          <h3>Factor bounties</h3>
+          <p>Pay bounties for new factors that clear IC + stability gates. Rejected factors stay public as negative examples.</p>
+        </article>
+      </div>
+
+      <div class="formula">
+        <p><strong>Design rule:</strong> if a feature works without the token, keep it free. Token pays for depth, speed, and governance - not for looking at a homepage score.</p>
+        <p class="muted">No emission schedule theater in v1. Ship utility surfaces before emission charts.</p>
+      </div>
+    </section>
+
+    <section class="panel flags" id="governance">
+      <div class="panel-head">
+        <p class="eyebrow">// GOVERNANCE</p>
+        <h2>What the UI must shout - and who decides the rules.</h2>
+        <p class="lead">
+          Governance is not a Discord poll about logo colors. It is control over scoring rules,
+          dispute handling, and what counts as a red flag the product cannot soft-pedal.
+        </p>
+      </div>
+
+      <h3 class="subhead">Hard red flags</h3>
+      <div class="flag-row">
+        <div class="flag">high IC, unstable sign</div>
+        <div class="flag">strong correlation with momentum</div>
+        <div class="flag">broke on 2022 holdout</div>
+        <div class="flag">look-ahead / future leak risk</div>
+        <div class="flag">sample too short for stability</div>
+        <div class="flag">pure narrative, no measurable IC</div>
+      </div>
+
+      <div class="info-grid">
+        <article class="glass-box">
+          <h3>On-chain / off-chain split</h3>
+          <ul class="bullets">
+            <li><strong>On-chain</strong> - parameter votes, stake, dispute outcomes</li>
+            <li><strong>Off-chain</strong> - heavy compute, dataset builds, human review queues</li>
+            <li><strong>Published</strong> - model version hash + score snapshot for every release</li>
+          </ul>
+        </article>
+        <article class="glass-box">
+          <h3>Dispute flow</h3>
+          <ol>
+            <li>Anyone can flag a score with evidence (window, IC table, leak claim)</li>
+            <li>Stakers bond on uphold vs revise</li>
+            <li>Review window publishes a decision + changelog</li>
+            <li>Losing side funds the next robustness run</li>
+          </ol>
+        </article>
+      </div>
+
+      <p class="lead tight">
+        If the goal is to test the idea fast - ship a factor Alpha Evaluator with IC + stability.
+        Metrics are clear. Data is free. Results are checkable. Expand to quant depth or agent eval later.
+      </p>
+      <a class="btn-support big" href="#search">START WITH IC + STABILITY</a>
+    </section>
+
+    <section class="panel" id="roadmap">
+      <p class="eyebrow">// ROADMAP</p>
+      <h2>Not a platform. One sharp tool - then layers.</h2>
+      <div class="mvp-grid">
+        <article class="mvp-card">
+          <span class="tag">MVP #1 - 1-2 weeks</span>
+          <h3>Local Alpha Evaluator</h3>
+          <ul>
+            <li>Accept a factor (formula or value column)</li>
+            <li>Compute IC / RankIC / ICIR on holdout</li>
+            <li>Stability by year / quarter</li>
+            <li>Composite 0-100 + red flags</li>
+          </ul>
+          <p class="stack">Jupyter + Streamlit or CLI. No accounts. No paywall. No "AI platform".</p>
+          <div class="screen-bits">
+            <span>score + breakdown</span>
+            <span>IC table by period</span>
+            <span>factor distribution</span>
+            <span>warnings</span>
+          </div>
+        </article>
+        <article class="mvp-card soft">
+          <span class="tag">MVP #2 - only if #1 is used</span>
+          <h3>Batch compare</h3>
+          <ul>
+            <li>Score 50-200 candidates</li>
+            <li>Factor vs factor compare</li>
+            <li>CSV export</li>
+            <li>1-2 robustness tests</li>
+          </ul>
+          <p class="stack warn">Skip first: full portfolio backtest, custom ML scorer, alpha marketplace, 6-domain agent eval.</p>
+        </article>
+      </div>
+
+      <div class="timeline">
+        <article class="tl-item">
+          <span class="tl-dot"></span>
+          <div>
+            <strong>Now</strong>
+            <p>Landing + protocol carousel + hot deal flow scoring proxies.</p>
+          </div>
+        </article>
+        <article class="tl-item">
+          <span class="tl-dot"></span>
+          <div>
+            <strong>Next</strong>
+            <p>Local evaluator CLI / Streamlit with IC tables and red-flag engine.</p>
+          </div>
+        </article>
+        <article class="tl-item">
+          <span class="tl-dot"></span>
+          <div>
+            <strong>Later</strong>
+            <p>Batch compare, published model versions, token-gated deep reports.</p>
+          </div>
+        </article>
+        <article class="tl-item">
+          <span class="tl-dot"></span>
+          <div>
+            <strong>Edge</strong>
+            <p>Dispute staking + governance over weights - only after the score is trusted.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="faq">
+      <div class="panel-head">
+        <p class="eyebrow">// FAQ</p>
+        <h2>Straight answers.</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Is a high score a buy signal?</summary>
+          <p>No. A high score means the composite factors look strong on the published method. It does not price liquidity, legal risk, or your portfolio constraints.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Why show the breakdown at all?</summary>
+          <p>Because a single number without IC / stability / robustness is how people ship factors that die in the first live month. Breakdown is the product.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How often do scores refresh?</summary>
+          <p>Protocol carousel scores refresh when the model version changes. Hot Project deal scores refresh with the fundraising scrape (see updated timestamp on that page).</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I submit my own factor?</summary>
+          <p>That is the MVP #1 path: local evaluator first. Public submissions come after we can score batches without turning the site into a spam sink.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What about early-stage / pre-token projects?</summary>
+          <p>They use investor / raise / sector proxies until IC history exists. Expect wider confidence bands and more red flags - that is honest, not broken.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Where does governance start?</summary>
+          <p>After the score language is stable. Early governance without a trusted model is just costume politics.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <img src="./assets/logo.png" alt="" width="28" height="28" />
+    <span>evaluator.watch - composite trust scores for WEB3 factors</span>
+  </footer>
+
+  <script src="./theme.js"></script>
+  <script src="./cursor.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

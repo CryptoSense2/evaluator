@@ -1,0 +1,501 @@
+{
+  "updatedAt": "2026-09-22T18:37:36.676817Z",
+  "sources": [
+    "https://crypto-fundraising.info/deal-flow/",
+    "https://cryptorank.io/upcoming-ico?page=2&rows=50"
+  ],
+  "projects": [
+    {
+      "name": "XStable",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": null,
+      "tags": [
+        "AI",
+        "API",
+        "DeFi",
+        "Infrastructure",
+        "RWA",
+        "Trading"
+      ],
+      "investors": [
+        "YZi Labs (ex Binance Labs)",
+        "Sui Network",
+        "Taisu Ventures",
+        "CatcherVC"
+      ],
+      "when": "Live deal flow",
+      "type": "Private",
+      "score": 72,
+      "dims": {
+        "predictive": 69,
+        "stability": 60,
+        "robustness": 75,
+        "logic": 87,
+        "diversity": 73
+      },
+      "flags": [
+        "raise size unknown"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "CatchBack",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": 8000000,
+      "tags": [
+        "Infrastructure"
+      ],
+      "investors": [
+        "Foundation Capital",
+        "Y Combinator",
+        "Robinhood",
+        "Coinbase Ventures",
+        "Solana Foundation"
+      ],
+      "when": "Live deal flow",
+      "type": "Private",
+      "score": 67,
+      "dims": {
+        "predictive": 55,
+        "stability": 60,
+        "robustness": 86,
+        "logic": 63,
+        "diversity": 78
+      },
+      "flags": [],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "OpenDelta",
+      "ticker": "USDO",
+      "raiseUsd": null,
+      "tags": [
+        "Stablecoin",
+        "ICO",
+        "LEGION"
+      ],
+      "investors": [
+        "Anatoly Yakovenko"
+      ],
+      "when": "TBA",
+      "type": "ICO",
+      "initialCap": null,
+      "moniScore": 805,
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/upcoming-ico",
+      "launchpad": "LEGION",
+      "score": 56,
+      "dims": {
+        "predictive": 60,
+        "stability": 47,
+        "robustness": 45,
+        "logic": 67,
+        "diversity": 70
+      },
+      "flags": [
+        "raise size unknown"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Aether L2",
+      "ticker": "AETH",
+      "raiseUsd": 12000000,
+      "tags": [
+        "L2",
+        "Infrastructure",
+        "IEO"
+      ],
+      "investors": [],
+      "when": "Q2 2026",
+      "type": "IEO",
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/upcoming-ico",
+      "score": 56,
+      "dims": {
+        "predictive": 47,
+        "stability": 45,
+        "robustness": 55,
+        "logic": 75,
+        "diversity": 78
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Circle",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": 100000000,
+      "tags": [
+        "Asset Management",
+        "Payment",
+        "Stablecoin"
+      ],
+      "investors": [],
+      "when": "Sep 2026",
+      "type": "Private",
+      "score": 54,
+      "dims": {
+        "predictive": 40,
+        "stability": 45,
+        "robustness": 60,
+        "logic": 71,
+        "diversity": 70
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Travix",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": null,
+      "tags": [
+        "AI",
+        "Arbitrum",
+        "DeFi",
+        "Derivatives",
+        "Trading"
+      ],
+      "investors": [],
+      "when": "Live deal flow",
+      "type": "Private",
+      "score": 54,
+      "dims": {
+        "predictive": 54,
+        "stability": 45,
+        "robustness": 45,
+        "logic": 71,
+        "diversity": 65
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed",
+        "raise size unknown"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Infini",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": 6000000,
+      "tags": [
+        "AI",
+        "API",
+        "Asset Management",
+        "Finance",
+        "Payment",
+        "Stablecoin"
+      ],
+      "investors": [
+        "SNZ Holding",
+        "Reforge",
+        "Enlight Capital",
+        "NDV",
+        "Fortwest",
+        "Vernal"
+      ],
+      "when": "Live deal flow",
+      "type": "Private",
+      "score": 53,
+      "dims": {
+        "predictive": 48,
+        "stability": 45,
+        "robustness": 51,
+        "logic": 71,
+        "diversity": 65
+      },
+      "flags": [],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Echo Protocol",
+      "ticker": "ECHO",
+      "raiseUsd": 5000000,
+      "tags": [
+        "DeFi",
+        "IDO"
+      ],
+      "investors": [],
+      "when": "Upcoming",
+      "type": "IDO",
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/upcoming-ico",
+      "score": 53,
+      "dims": {
+        "predictive": 46,
+        "stability": 45,
+        "robustness": 51,
+        "logic": 67,
+        "diversity": 70
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Nova Trade",
+      "ticker": "NOVA",
+      "raiseUsd": 3200000,
+      "tags": [
+        "Trading",
+        "Perps",
+        "IDO"
+      ],
+      "investors": [],
+      "when": "Upcoming",
+      "type": "IDO",
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/upcoming-ico",
+      "score": 53,
+      "dims": {
+        "predictive": 46,
+        "stability": 45,
+        "robustness": 51,
+        "logic": 67,
+        "diversity": 70
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "PulseID",
+      "ticker": "PID",
+      "raiseUsd": 1800000,
+      "tags": [
+        "Identity",
+        "RWA",
+        "ICO"
+      ],
+      "investors": [],
+      "when": "TBA",
+      "type": "ICO",
+      "moniScore": 320,
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/upcoming-ico",
+      "score": 52,
+      "dims": {
+        "predictive": 48,
+        "stability": 41,
+        "robustness": 45,
+        "logic": 67,
+        "diversity": 78
+      },
+      "flags": [
+        "thin history - stability is a proxy, not IC",
+        "no disclosed tier-1 backers in feed"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Battle Town",
+      "ticker": "BTOWN",
+      "raiseUsd": 13510000,
+      "tags": [
+        "Game",
+        "ICO"
+      ],
+      "investors": [],
+      "when": "Jan 1, 2027",
+      "type": "ICO",
+      "initialCap": null,
+      "moniScore": null,
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/upcoming-ico",
+      "score": 51,
+      "dims": {
+        "predictive": 40,
+        "stability": 45,
+        "robustness": 55,
+        "logic": 59,
+        "diversity": 70
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Chainers",
+      "ticker": "CHU",
+      "raiseUsd": 2000000,
+      "tags": [
+        "ICO"
+      ],
+      "investors": [],
+      "when": "TBA",
+      "type": "ICO",
+      "initialCap": null,
+      "moniScore": 265,
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/upcoming-ico",
+      "score": 49,
+      "dims": {
+        "predictive": 46,
+        "stability": 41,
+        "robustness": 45,
+        "logic": 59,
+        "diversity": 70
+      },
+      "flags": [
+        "thin history - stability is a proxy, not IC",
+        "no disclosed tier-1 backers in feed"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "PonyGo",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": null,
+      "tags": [],
+      "investors": [],
+      "when": "Recent",
+      "type": "Private / Deal flow",
+      "score": 48,
+      "dims": {
+        "predictive": 40,
+        "stability": 45,
+        "robustness": 45,
+        "logic": 55,
+        "diversity": 70
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed",
+        "raise size unknown"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "dtcpay",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": null,
+      "tags": [],
+      "investors": [],
+      "when": "Recent",
+      "type": "Private / Deal flow",
+      "score": 48,
+      "dims": {
+        "predictive": 40,
+        "stability": 45,
+        "robustness": 45,
+        "logic": 55,
+        "diversity": 70
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed",
+        "raise size unknown"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "OpenZeppelin",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": null,
+      "tags": [],
+      "investors": [],
+      "when": "Recent",
+      "type": "Private / Deal flow",
+      "score": 48,
+      "dims": {
+        "predictive": 40,
+        "stability": 45,
+        "robustness": 45,
+        "logic": 55,
+        "diversity": 70
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed",
+        "raise size unknown"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Rep",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": null,
+      "tags": [],
+      "investors": [],
+      "when": "Recent",
+      "type": "Private / Deal flow",
+      "score": 48,
+      "dims": {
+        "predictive": 40,
+        "stability": 45,
+        "robustness": 45,
+        "logic": 55,
+        "diversity": 70
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed",
+        "raise size unknown"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Filter",
+      "source": "crypto-fundraising",
+      "sourceUrl": "https://crypto-fundraising.info/deal-flow/",
+      "raiseUsd": null,
+      "tags": [],
+      "investors": [],
+      "when": "Recent",
+      "type": "Private / Deal flow",
+      "score": 48,
+      "dims": {
+        "predictive": 40,
+        "stability": 45,
+        "robustness": 45,
+        "logic": 55,
+        "diversity": 70
+      },
+      "flags": [
+        "no disclosed tier-1 backers in feed",
+        "raise size unknown"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    },
+    {
+      "name": "Dlicom",
+      "ticker": "DLI",
+      "raiseUsd": 2500000,
+      "tags": [
+        "ICO"
+      ],
+      "investors": [],
+      "when": "TBA",
+      "type": "ICO",
+      "initialCap": 4100000,
+      "moniScore": 176,
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/upcoming-ico",
+      "score": 47,
+      "dims": {
+        "predictive": 44,
+        "stability": 35,
+        "robustness": 45,
+        "logic": 59,
+        "diversity": 70
+      },
+      "flags": [
+        "thin history - stability is a proxy, not IC",
+        "no disclosed tier-1 backers in feed",
+        "low moni score on CryptoRank"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Predictive Power is a sector/investor proxy until holdout data exists."
+    }
+  ]
+}
