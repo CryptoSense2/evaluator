@@ -81,7 +81,7 @@ pie showData
 ```mermaid
 flowchart LR
   A[Ingest prices + universe] --> B[Compute IC / RankIC / ICIR]
-  B --> C[Stress: shifts · noise · horizons]
+  B --> C[Stress: shifts | noise | horizons]
   C --> D[Composite 0-100 + breakdown]
   D --> E[Red flags + report]
 ```
@@ -97,7 +97,7 @@ flowchart LR
 | Prices | yfinance / local OHLCV CSV |
 | Universe | 100-300 liquid names |
 | Frequency | Daily (weekly for stress) |
-| Split | Train 2015-2019 · Val 2020-2021 · Holdout 2022-> |
+| Split | Train 2015-2019 | Val 2020-2021 | Holdout 2022-> |
 | Target | Forward return 1d / 5d / 20d |
 | Cleaning | Corporate actions, volume outliers, delistings, look-ahead checks |
 
@@ -128,9 +128,9 @@ timeline
     section Now
       Landing + carousel + hot deal proxies : evaluator.watch
     section Next
-      Local Alpha Evaluator : IC tables · stability · red flags
+      Local Alpha Evaluator : IC tables | stability | red flags
     section Later
-      Batch compare : CSV · robustness packs · model version hash
+      Batch compare : CSV | robustness packs | model version hash
     section Edge
       Dispute stake + weight votes : only after the score is trusted
 ```

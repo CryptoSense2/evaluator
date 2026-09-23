@@ -100,7 +100,7 @@ function cardHTML(proj, featuredOverride) {
       <h3>${proj.name}</h3>
       <span class="label">Score</span>
       <strong class="num">${proj.score}</strong>
-      <button type="button" class="more" data-open="${proj.id}">MORE →</button>
+      <button type="button" class="more" data-open="${proj.id}">MORE -></button>
     </article>
   `;
 }
@@ -349,7 +349,7 @@ function renderHotAnalysis(item) {
       <div class="analysis-title">
         <div>
           <h3>${item.name}${item.ticker ? ` <em>${item.ticker}</em>` : ""}</h3>
-          <p>${item.type || "Deal"} · ${item.when || "TBA"} · ${item.source}</p>
+          <p>${item.type || "Deal"} | ${item.when || "TBA"} | ${item.source}</p>
         </div>
       </div>
       <div class="analysis-score">
@@ -378,7 +378,7 @@ function renderHotAnalysis(item) {
             ${item.moniScore != null ? `<tr><td>Moni score</td><td>${item.moniScore}</td></tr>` : ""}
           </tbody>
         </table>
-        <p style="margin-top:12px"><a class="inline-link" href="${item.sourceUrl}" target="_blank" rel="noopener">Open source →</a></p>
+        <p style="margin-top:12px"><a class="inline-link" href="${item.sourceUrl}" target="_blank" rel="noopener">Open source -></a></p>
       </div>
       <div>
         <h4>Red flags</h4>
@@ -409,7 +409,7 @@ function renderHotGrid(list) {
             <span class="hot-chip">${item.type || "Deal"}</span>
             ${(item.tags || []).slice(0, 3).map((t) => `<span class="hot-chip">${t}</span>`).join("")}
           </div>
-          <p class="hot-raise">${fmtRaise(item.raiseUsd)} · ${item.when || "TBA"}</p>
+          <p class="hot-raise">${fmtRaise(item.raiseUsd)} | ${item.when || "TBA"}</p>
           ${
             item.investors?.length
               ? `<p class="hot-investors">${item.investors.slice(0, 4).join(" / ")}</p>`
@@ -429,7 +429,7 @@ async function loadHotProjects() {
     HOT = data.projects || [];
     if (hotUpdated) {
       hotUpdated.textContent = data.updatedAt
-        ? `Feed refreshed ${data.updatedAt.replace("T", " ").slice(0, 19)} UTC · ${HOT.length} projects scored`
+        ? `Feed refreshed ${data.updatedAt.replace("T", " ").slice(0, 19)} UTC | ${HOT.length} projects scored`
         : "";
     }
     renderHotGrid(HOT);
