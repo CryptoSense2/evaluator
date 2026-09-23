@@ -28,7 +28,10 @@ def main() -> None:
         shutil.copy2(ROOT / name, DEPLOY / name)
 
     (DEPLOY / "data").mkdir()
-    shutil.copy2(ROOT / "data" / "hot-projects.json", DEPLOY / "data" / "hot-projects.json")
+    for name in ("hot-projects.json", "projects.json"):
+        src = ROOT / "data" / name
+        if src.exists():
+            shutil.copy2(src, DEPLOY / "data" / name)
 
     (DEPLOY / "assets" / "icons").mkdir(parents=True)
     for name in [
@@ -46,13 +49,14 @@ def main() -> None:
         t = p.read_text(encoding="utf-8")
         t = re.sub(r"styles\.css\?v=[^\"]+", "styles.css", t)
         t = re.sub(r"cursor\.js\?v=[^\"]+", "cursor.js", t)
+        t = re.sub(r"app\.js\?v=[^\"]+", "app.js", t)
         p.write_text(t, encoding="utf-8", newline="\n")
 
     (DEPLOY / "UPLOAD.txt").write_text(
         "Upload ALL files from this folder to the web root of evaluator.watch\n"
         "Keep assets/ and data/ next to index.html\n"
-        "On server also run: sudo nginx -t && sudo systemctl reload nginx\n"
-        "Optional charset: add 'charset utf-8;' inside the server {} block\n",
+        "On server: sudo nginx -t && sudo systemctl reload nginx\n"
+        "Add inside server block: charset utf-8;\n",
         encoding="utf-8",
         newline="\n",
     )
@@ -64,15 +68,8 @@ def main() -> None:
                 continue
             zf.write(p, p.relative_to(DEPLOY).as_posix())
 
-    for name in ("index.html", "hot.html", "app.js", "hot.js"):
-        t = (DEPLOY / name).read_text(encoding="utf-8")
-        issues = []
-        if "â" in t or "Â" in t:
-            issues.append("mojibake")
-        if any(ord(c) in (0x2190, 0x2192, 0x2039, 0x203A, 0x00B7) for c in t):
-            issues.append("unicode-arrows")
-        print(name, "OK" if not issues else issues)
-
+    print("projects", (DEPLOY / "data" / "projects.json").exists())
+    print("icons", len(list((DEPLOY / "assets" / "icons").glob("*.png"))))
     print("zip", zip_path, zip_path.stat().st_size)
 
 

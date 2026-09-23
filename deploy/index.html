@@ -65,11 +65,14 @@
         <input
           id="searchInput"
           type="search"
-          placeholder="Search project - Bitcoin, Solana, Uniswap..."
+          placeholder="Search projects - BTC, HYPE, WIF, ONDO..."
           aria-label="Search project"
+          autocomplete="off"
+          enterkeyhint="search"
         />
         <button type="submit">ANALYZE</button>
       </form>
+      <p class="catalog-meta" id="catalogMeta">Loading catalog...</p>
       <div class="suggest" id="suggest" hidden></div>
       <div class="analysis" id="analysis" hidden></div>
     </section>
@@ -121,7 +124,7 @@
             <span class="dim-w">35-40%</span>
             <h3>Predictive Power</h3>
           </div>
-          <p>IC + RankIC (PPS, β = 0.5). IC Information Ratio = mean(IC) / std(IC) across periods. The alpha base - if this is weak, nothing else saves the score.</p>
+          <p>IC + RankIC (PPS, beta = 0.5). IC Information Ratio = mean(IC) / std(IC) across periods. The alpha base - if this is weak, nothing else saves the score.</p>
         </article>
         <article class="dim">
           <div class="dim-top">
