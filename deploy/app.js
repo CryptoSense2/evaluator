@@ -441,7 +441,6 @@ function renderHotAnalysis(item) {
             ${item.moniScore != null ? `<tr><td>Moni score</td><td>${item.moniScore}</td></tr>` : ""}
           </tbody>
         </table>
-        <p style="margin-top:12px"><a class="inline-link" href="${item.sourceUrl}" target="_blank" rel="noopener">Open source -></a></p>
       </div>
       <div>
         <h4>Red flags</h4>
