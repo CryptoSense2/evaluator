@@ -179,29 +179,37 @@ img { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 22px;
+  gap: 10px;
+  padding: 14px 26px 14px 20px;
   border-radius: 999px;
   border: 0;
-  background: linear-gradient(180deg, #ffffff 0%, #eef1f6 100%);
-  color: var(--text);
+  background: #ffffff;
+  color: #1a1f2c;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.95),
-    0 8px 18px rgba(20, 24, 40, 0.1),
-    0 14px 30px -8px rgba(255, 160, 60, 0.4),
-    0 0 18px rgba(255, 170, 80, 0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    0 1px 2px rgba(30, 40, 60, 0.06),
+    0 8px 18px rgba(40, 50, 70, 0.12),
+    0 14px 28px rgba(60, 50, 40, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.btn-back svg {
+  flex-shrink: 0;
+  display: block;
 }
 
 .btn-back:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   box-shadow:
-    inset 0 1px 0 #fff,
-    0 12px 24px rgba(20, 24, 40, 0.12),
-    0 18px 36px -6px rgba(255, 160, 60, 0.55),
-    0 0 24px rgba(255, 170, 80, 0.35);
+    0 2px 4px rgba(30, 40, 60, 0.08),
+    0 10px 22px rgba(40, 50, 70, 0.14),
+    0 16px 32px rgba(60, 50, 40, 0.1);
+}
+
+.back-wrap {
+  margin-top: 36px;
 }
 
 .btn-support {
@@ -303,8 +311,8 @@ img { display: block; max-width: 100%; }
 }
 
 .car-btn {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 0;
   display: inline-flex;
@@ -313,15 +321,17 @@ img { display: block; max-width: 100%; }
   padding: 0;
   background: #ffffff;
   color: #1a1f2c;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 1;
   cursor: pointer;
   box-shadow:
     0 1px 2px rgba(30, 40, 60, 0.06),
     0 8px 18px rgba(40, 50, 70, 0.12),
     0 14px 28px rgba(60, 50, 40, 0.08);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.car-btn svg {
+  display: block;
+  pointer-events: none;
 }
 
 .car-btn:hover {
@@ -1004,6 +1014,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin: 0 0 36px;
 }
 
 .flag {
@@ -1015,6 +1026,11 @@ img { display: block; max-width: 100%; }
   font-size: 13px;
   font-weight: 600;
   backdrop-filter: blur(10px);
+}
+
+#governance .info-grid {
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 
 .hero-meta {
@@ -1624,13 +1640,12 @@ body.is-hovering .cursor-fx__orbit-spin {
 
 [data-theme="dark"] .btn-back {
   border: 0;
-  background: linear-gradient(180deg, #2a3142 0%, #171b26 100%);
-  color: #fff;
+  background: #ffffff;
+  color: #1a1f2c;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    0 10px 22px rgba(0, 0, 0, 0.4),
-    0 14px 30px -8px rgba(255, 150, 50, 0.35),
-    0 0 18px rgba(255, 160, 60, 0.2);
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    0 8px 18px rgba(0, 0, 0, 0.28),
+    0 14px 28px rgba(0, 0, 0, 0.18);
 }
 
 [data-theme="dark"] .car-btn {
