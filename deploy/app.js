@@ -59,7 +59,6 @@ const analysisEl = document.getElementById("analysis");
 const suggestEl = document.getElementById("suggest");
 const searchInput = document.getElementById("searchInput");
 const searchForm = document.getElementById("searchForm");
-const catalogMeta = document.getElementById("catalogMeta");
 
 function normalizeProject(raw) {
   const cur = CURATED[raw.id] || {};
@@ -366,7 +365,6 @@ async function loadProjects() {
   }
 
   if (!PROJECTS.length) {
-    if (catalogMeta) catalogMeta.textContent = "Catalog failed to load";
     return;
   }
 
@@ -375,11 +373,6 @@ async function loadProjects() {
   const trending = PROJECTS.filter((p) => p.trending && !top.some((t) => t.id === p.id)).slice(0, 8);
   CAROUSEL = [...top, ...trending];
   if (!CAROUSEL.length) CAROUSEL = PROJECTS.slice(0, 24);
-
-  if (catalogMeta) {
-    const updated = "";
-    catalogMeta.textContent = `${PROJECTS.length} projects in search | carousel ${CAROUSEL.length}`;
-  }
 
   if (searchInput) {
     searchInput.placeholder = `Search ${PROJECTS.length}+ projects - BTC, HYPE, WIF, ONDO...`;
