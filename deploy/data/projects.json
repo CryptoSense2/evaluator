@@ -1,6 +1,42 @@
 {
-  "updatedAt": "2026-09-26T10:37:51Z",
+  "updatedAt": "2026-09-26T10:43:51Z",
   "projects": [
+    {
+      "id": "linera",
+      "name": "LINERA",
+      "ticker": "LINERA",
+      "score": 80,
+      "tint": "#3878FF",
+      "logo": "linera",
+      "blurb": "Microchain L1 for elastic Web3 scale. Total seed \\ (a16z + Borderless). Short sample until liquid IC history.",
+      "dims": {
+        "predictive": 78,
+        "stability": 62,
+        "robustness": 90,
+        "logic": 88,
+        "diversity": 80
+      },
+      "flags": [
+        "short sample",
+        "pre-token / early network sample"
+      ],
+      "ic": [
+        {
+          "period": "2024",
+          "ic": 0.05,
+          "rank": 0.04
+        },
+        {
+          "period": "2025",
+          "ic": 0.07,
+          "rank": 0.06
+        }
+      ],
+      "featured": true,
+      "rank": 0,
+      "source": "manual",
+      "trending": true
+    },
     {
       "id": "catalyst-2",
       "name": "CATALYST",

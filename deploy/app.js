@@ -60,6 +60,17 @@ const CURATED = {
     flags: ["short sample", "no liquid IC history"],
     featured: true,
   },
+  linera: {
+    tint: "#3878FF",
+    logo: "linera",
+    name: "LINERA",
+    ticker: "LINERA",
+    score: 80,
+    blurb: "Microchain L1 for elastic Web3 scale. Total seed $12M (a16z + Borderless). Short sample until liquid IC history.",
+    dims: { predictive: 78, stability: 62, robustness: 90, logic: 88, diversity: 80 },
+    flags: ["short sample", "pre-token / early network sample"],
+    featured: true,
+  },
 };
 
 let PROJECTS = [];

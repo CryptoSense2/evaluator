@@ -1,11 +1,59 @@
 {
-  "updatedAt": "2026-09-26T10:37:51Z",
+  "updatedAt": "2026-09-26T10:43:51Z",
   "sources": [
     "https://crypto-fundraising.info/deal-flow/",
     "https://cryptorank.io/upcoming-ico?page=2&rows=50",
-    "https://cryptorank.io/ico/catalyst"
+    "https://cryptorank.io/ico/catalyst",
+    "https://linera.io/news/bringing-microchains-to-web3-with-an-additional-6m-in-funding"
   ],
   "projects": [
+    {
+      "name": "Linera",
+      "ticker": "LINERA",
+      "raiseUsd": 12000000,
+      "tags": [
+        "L1",
+        "Infrastructure",
+        "Microchains",
+        "Scalability"
+      ],
+      "investors": [
+        "a16z crypto",
+        "Borderless Capital",
+        "Tribe Capital",
+        "Cygni Capital",
+        "Kima Ventures",
+        "Laser Digital Ventures",
+        "DFG",
+        "Cadenza",
+        "Block1",
+        "Eterna Capital",
+        "MH Ventures",
+        "Matrixport",
+        "L2IV",
+        "ArkStream",
+        "Flow Traders",
+        "GSR Markets",
+        "OWC"
+      ],
+      "when": "Seed 2022 + follow-on Aug 2023",
+      "type": "Seed",
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/ico/linera",
+      "score": 80,
+      "dims": {
+        "predictive": 78,
+        "stability": 62,
+        "robustness": 90,
+        "logic": 88,
+        "diversity": 80
+      },
+      "flags": [
+        "short sample",
+        "pre-token / early network sample"
+      ],
+      "scoreNote": "Early-stage composite (no liquid IC history). Total seed \\ (a16z crypto + Borderless follow-on). Microchain L1 - proxies until mainnet holdout exists."
+    },
     {
       "name": "Catalyst",
       "ticker": "CATALYST",
