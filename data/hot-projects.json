@@ -1,10 +1,49 @@
 {
-  "updatedAt": "2026-09-22T18:37:36.676817Z",
+  "updatedAt": "2026-09-26T10:37:51Z",
   "sources": [
     "https://crypto-fundraising.info/deal-flow/",
-    "https://cryptorank.io/upcoming-ico?page=2&rows=50"
+    "https://cryptorank.io/upcoming-ico?page=2&rows=50",
+    "https://cryptorank.io/ico/catalyst"
   ],
   "projects": [
+    {
+      "name": "Catalyst",
+      "ticker": "CATALYST",
+      "raiseUsd": 4200000,
+      "tags": [
+        "DeFi",
+        "Infrastructure",
+        "Cross-chain",
+        "Liquidity"
+      ],
+      "investors": [
+        "Spartan Group",
+        "Robot Ventures",
+        "Maven11",
+        "Alchemy Ventures",
+        "HashKey Capital",
+        "Circle Ventures",
+        "Superscrypt",
+        "Polygon Ventures"
+      ],
+      "when": "Seed Apr 2023 / M&A Feb 2025",
+      "type": "Seed",
+      "source": "cryptorank",
+      "sourceUrl": "https://cryptorank.io/ico/catalyst",
+      "score": 73,
+      "dims": {
+        "predictive": 68,
+        "stability": 58,
+        "robustness": 82,
+        "logic": 84,
+        "diversity": 76
+      },
+      "flags": [
+        "short sample",
+        "no liquid IC history"
+      ],
+      "scoreNote": "Early-stage composite (no IC history). Seed \\.2M led by Spartan Group with Circle, HashKey, Robot, Maven11, Alchemy, Polygon Ventures. CryptoRank lists Feb 2025 M&A. Proxies until holdout IC exists."
+    },
     {
       "name": "XStable",
       "source": "crypto-fundraising",

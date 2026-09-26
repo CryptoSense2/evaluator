@@ -49,6 +49,17 @@ const CURATED = {
     blurb: "Meme attention battery. Pure momentum beta.",
     flags: ["strong correlation with momentum", "high IC, unstable sign"],
   },
+  "catalyst-2": {
+    tint: "#6C5CE7",
+    logo: "catalyst",
+    name: "CATALYST",
+    ticker: "CATALYST",
+    score: 73,
+    blurb: "Modular cross-chain liquidity (Cata Labs). Seed $4.2M Spartan-led. Short sample until liquid IC history.",
+    dims: { predictive: 68, stability: 58, robustness: 82, logic: 84, diversity: 76 },
+    flags: ["short sample", "no liquid IC history"],
+    featured: true,
+  },
 };
 
 let PROJECTS = [];
