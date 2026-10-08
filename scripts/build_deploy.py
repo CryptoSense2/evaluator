@@ -24,8 +24,11 @@ def main() -> None:
         "hot.js",
         "theme.js",
         "cursor.js",
+        "token.js",
     ]:
-        shutil.copy2(ROOT / name, DEPLOY / name)
+        src = ROOT / name
+        if src.exists():
+            shutil.copy2(src, DEPLOY / name)
 
     (DEPLOY / "data").mkdir()
     for name in ("hot-projects.json", "projects.json"):
