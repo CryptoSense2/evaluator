@@ -128,10 +128,15 @@ img { display: block; max-width: 100%; }
   transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
 }
 
-.brand-ca:hover {
+.brand-ca:hover:not(:disabled) {
   color: var(--text);
   border-color: rgba(47, 123, 255, 0.45);
   background: rgba(255, 255, 255, 0.8);
+}
+
+.brand-ca:disabled {
+  cursor: default;
+  opacity: 0.72;
 }
 
 [data-theme="dark"] .brand-ca {
@@ -140,7 +145,7 @@ img { display: block; max-width: 100%; }
   color: var(--muted);
 }
 
-[data-theme="dark"] .brand-ca:hover {
+[data-theme="dark"] .brand-ca:hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.1);
   color: var(--text);
   border-color: rgba(90, 160, 255, 0.35);

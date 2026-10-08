@@ -10,18 +10,24 @@
   const caBtn = document.getElementById("brandCa");
   if (!root || !tickerEl || !caBtn) return;
 
+  tickerEl.textContent = TOKEN.ticker || "$EVAL";
+  root.hidden = false;
+
   const ca = String(TOKEN.ca || "").trim();
-  if (!TOKEN.ticker || !ca || ca === "PASTE_CA" || ca.startsWith("[")) {
+  const ready = Boolean(ca) && ca !== "PASTE_CA" && !ca.startsWith("[");
+
+  if (!ready) {
+    caBtn.textContent = "ca soon";
+    caBtn.disabled = true;
+    caBtn.title = "CA coming soon";
     return;
   }
 
-  const short =
-    ca.length > 14 ? `${ca.slice(0, 6)}…${ca.slice(-4)}` : ca;
-
-  tickerEl.textContent = TOKEN.ticker;
+  const short = ca.length > 14 ? `${ca.slice(0, 6)}…${ca.slice(-4)}` : ca;
+  caBtn.disabled = false;
   caBtn.textContent = `ca ${short}`;
   caBtn.dataset.ca = ca;
-  root.hidden = false;
+  caBtn.title = "Copy CA";
 
   caBtn.addEventListener("click", async (e) => {
     e.preventDefault();
