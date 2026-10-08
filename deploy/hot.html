@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=token1" />
   <link rel="icon" href="./assets/logo.png" />
   <script>
     (() => {
@@ -24,6 +24,10 @@
   <header class="nav">
     <a class="brand" href="./index.html">
       <img src="./assets/evaluator-wordmark.png" alt="EVALUATOR" class="brand-wordmark" data-wordmark />
+      <span class="brand-token" id="brandToken" hidden>
+        <span class="brand-ticker" id="brandTicker"></span>
+        <button type="button" class="brand-ca" id="brandCa" title="Copy CA"></button>
+      </span>
     </a>
     <nav class="nav-links">
       <a href="./index.html#scores">SCORES</a>
@@ -58,8 +62,9 @@
     </p>
   </main>
 
+  <script src="./token.js"></script>
   <script src="./theme.js"></script>
-  <script src="./cursor.js"></script>
+  <script src="./cursor.js?v=2"></script>
   <script src="./hot.js"></script>
 </body>
 </html>

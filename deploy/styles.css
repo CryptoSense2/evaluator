@@ -67,7 +67,7 @@ img { display: block; max-width: 100%; }
 
 .nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
   max-width: 1180px;
@@ -76,9 +76,17 @@ img { display: block; max-width: 100%; }
   overflow: visible;
 }
 
+.nav-links,
+.nav-actions {
+  padding-top: 8px;
+}
+
 .brand {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  text-decoration: none;
 }
 
 .brand-wordmark {
@@ -86,6 +94,56 @@ img { display: block; max-width: 100%; }
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 6px 14px rgba(60, 100, 180, 0.18));
+}
+
+.brand-token {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 220px;
+  flex-wrap: wrap;
+}
+
+.brand-ticker {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--blue);
+}
+
+.brand-ca {
+  appearance: none;
+  border: 1px solid rgba(47, 123, 255, 0.22);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--muted);
+  font: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 4px 8px;
+  border-radius: 999px;
+  cursor: pointer;
+  line-height: 1.2;
+  backdrop-filter: blur(10px);
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.brand-ca:hover {
+  color: var(--text);
+  border-color: rgba(47, 123, 255, 0.45);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] .brand-ca {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--muted);
+}
+
+[data-theme="dark"] .brand-ca:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  border-color: rgba(90, 160, 255, 0.35);
 }
 
 .nav-links {
