@@ -1,8 +1,8 @@
 (() => {
   // Paste the live contract address here (EVM 0x… or Solana mint).
   const TOKEN = {
-    ticker: "$EVAL",
-    ca: "", // paste full CA next
+    ticker: "EVALUATOR",
+    ca: "", // wait for CA paste
   };
 
   const root = document.getElementById("brandToken");
@@ -10,7 +10,7 @@
   const caBtn = document.getElementById("brandCa");
   if (!root || !tickerEl || !caBtn) return;
 
-  tickerEl.textContent = TOKEN.ticker || "$EVAL";
+  tickerEl.textContent = TOKEN.ticker || "EVALUATOR";
   root.hidden = false;
 
   const ca = String(TOKEN.ca || "").trim();
