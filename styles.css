@@ -100,7 +100,7 @@ img { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  max-width: 220px;
+  max-width: min(520px, 92vw);
   flex-wrap: wrap;
 }
 
@@ -119,13 +119,16 @@ img { display: block; max-width: 100%; }
   font: inherit;
   font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   padding: 4px 8px;
   border-radius: 999px;
   cursor: pointer;
   line-height: 1.2;
   backdrop-filter: blur(10px);
   transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  word-break: break-all;
+  text-align: left;
+  max-width: 100%;
 }
 
 .brand-ca:hover:not(:disabled) {

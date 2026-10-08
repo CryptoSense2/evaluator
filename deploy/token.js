@@ -2,7 +2,7 @@
   // Paste the live contract address here (EVM 0x… or Solana mint).
   const TOKEN = {
     ticker: "$EVAL",
-    ca: "", // e.g. "0x5291d09b0d3821fe226f29376239dde7de282a0b"
+    ca: "", // paste full CA next
   };
 
   const root = document.getElementById("brandToken");
@@ -23,9 +23,9 @@
     return;
   }
 
-  const short = ca.length > 14 ? `${ca.slice(0, 6)}…${ca.slice(-4)}` : ca;
+  // Full address as visible text (no truncation).
   caBtn.disabled = false;
-  caBtn.textContent = `ca ${short}`;
+  caBtn.textContent = ca;
   caBtn.dataset.ca = ca;
   caBtn.title = "Copy CA";
 
