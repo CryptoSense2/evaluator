@@ -2,7 +2,7 @@
   // Paste the live contract address here (EVM 0x… or Solana mint).
   const TOKEN = {
     ticker: "EVALUATOR",
-    ca: "", // wait for CA paste
+    ca: "EUcfrs19QgPPm42U7ukG2FZ2Y5VkLtcugse2jVCDpump",
   };
 
   const root = document.getElementById("brandToken");
